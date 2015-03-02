@@ -15,7 +15,7 @@ function getFacebook(){
 		   /// FB.getLoginStatus(updateStatusCallback);	
 		  
 	   FB.api(
-    	"/454855137937533/feed",
+    	"/194315394024518/feed",
   	 	 	function (responses) {
     	  if (responses && !responses.error) {
        		 $.each(responses, function(index, response) {
