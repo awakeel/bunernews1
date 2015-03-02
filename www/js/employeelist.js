@@ -24,7 +24,7 @@ function getFacebook(){
        		 	var id = 11;
        		 	 console.log(response.id);
        		 	$('#employeeList').append('<li><a href="employeedetails.html?id=' +  id + '">' +
-					 alert(response.message);
+					
 					'<h4>' + response.message + '</h4> </li>');
        		 	 
        		 });
