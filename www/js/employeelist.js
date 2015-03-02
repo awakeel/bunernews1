@@ -28,9 +28,9 @@ function getFacebook(){
 					'<h4>' + response.message + '</h4>' +
 					'<p>' + response.created_time + '</p>' +
 					'<span class="ui-li-count">' + response.from.name + '</span></a></li>');
-       		 	 $('#employeeList').listview('refresh');
+       		 	 
        		 });
-       		
+       		$('#employeeList').listview('refresh');
     	      }
    			}
 		);	   
