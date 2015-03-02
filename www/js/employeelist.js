@@ -24,10 +24,8 @@ function getFacebook(){
        		 	var id = 11;
        		 	 console.log(response.id);
        		 	$('#employeeList').append('<li><a href="employeedetails.html?id=' +  id + '">' +
-					image+
-					'<h4>' + response.message + '</h4>' +
-					'<p>' + response.created_time + '</p>' +
-					'<span class="ui-li-count">' + response.from.name + '</span></a></li>');
+					 alert(response.message);
+					'<h4>' + response.message + '</h4> </li>');
        		 	 
        		 });
        		$('#employeeList').listview('refresh');
