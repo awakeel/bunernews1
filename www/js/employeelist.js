@@ -7,13 +7,7 @@ $('#employeeListPage').bind('pageinit', function(event) {
 });
 function getFacebook(){
  $('#employeeList li').remove();
-		  $.ajaxSetup({ cache: true }); 
-		    FB.init({
-		      appId: '772672609440031',
-		    });     
-		    $('#loginbutton,#feedbutton').removeAttr('disabled');
-		   /// FB.getLoginStatus(updateStatusCallback);	
-		  
+		 
 	   FB.api(
     	"/194315394024518/feed",
   	 	 	function (responses) {
@@ -22,7 +16,7 @@ function getFacebook(){
        		 	var response = response[0];
        		 	var image = "";
        		 	var id = 11;
-       		 	 console.log(response.id);
+       		 	navigator.notification.alert(response, null, "Title", "Button Text");
        		 	$('#employeeList').append('<li><a href="employeedetails.html?id=' +  id + '">' +
 					
 					'<h4>' + response.message + '</h4> </li>');
