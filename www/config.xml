@@ -14,8 +14,11 @@
 
     <author href="http://islamabadinc.com" email="itsprogrammer@gmail.com">
         Abdul Wakeel
-    </author>
-
+    </author> 
+<gap:plugin name="com.phonegap.plugins.facebookconnect">
+    <param name="APP_ID" value="772672609440031" />
+    <param name="APP_NAME" value="bunernews" />
+</gap:plugin>
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
